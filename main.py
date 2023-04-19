@@ -7,9 +7,10 @@ import time
 st.set_page_config(page_title="基于Streamlit的图像综合增强器", layout="wide")
 
 def baidu_tupian_duibidu_zengqiang(target):
-    # client_id为从官网获取的AK， client_secret为从官网获取的SK
-    client_id = "yZCjtfAuBRkQGwctFzNZ2Dy5"
-    client_secret = "jivcc3ZbI5dvHjW3SY6r6ZxNGIH6Hs7w"
+    # client_id为从官网获取的AK,client_secret为从官网获取的SK,我肯定不能暴露自己的AK和SK
+    # 可以通过“https://console.bce.baidu.com/ai/#/ai/imageprocess/overview/resource/getFree”获取自己的AK和SK
+    client_id = ""
+    client_secret = ""
 
     token_url = "https://aip.baidubce.com/oauth/2.0/token"
     host = f"{token_url}?grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}"
@@ -32,8 +33,8 @@ def baidu_tupian_duibidu_zengqiang(target):
     picture.write(base64.b64decode(json.loads(content)["image"]))
 
 def baidu_tupian_secai_zengqiang(target):
-    client_id = "yZCjtfAuBRkQGwctFzNZ2Dy5"
-    client_secret = "jivcc3ZbI5dvHjW3SY6r6ZxNGIH6Hs7w"
+    client_id = ""
+    client_secret = ""
 
     token_url = "https://aip.baidubce.com/oauth/2.0/token"
     host = f"{token_url}?grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}"
@@ -62,8 +63,8 @@ def baidu_tupian_secai_zengqiang(target):
 
 
 def baidu_tuxiang_qingxidu_zengqiang(target):
-    client_id = "yZCjtfAuBRkQGwctFzNZ2Dy5"
-    client_secret = "jivcc3ZbI5dvHjW3SY6r6ZxNGIH6Hs7w"
+    client_id = ""
+    client_secret = ""
 
     token_url = "https://aip.baidubce.com/oauth/2.0/token"
     host = f"{token_url}?grant_type=client_credentials&client_id={client_id}&client_secret={client_secret}"
